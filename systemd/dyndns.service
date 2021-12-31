@@ -7,4 +7,3 @@ After=basic.target network.target
 User=<>
 ExecStart=<>/gandi-live-dns/main.py --update
 Type=oneshot
-Restart=always
