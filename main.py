@@ -72,7 +72,8 @@ def validate_config():
 def m():
   validate_config()
   ip4, ip6 = (icanhazip(True), icanhazip(False))
-  update_registration(ip4=ip4, ip6=ip6)
+  update = update_registration(ip4=ip4, ip6=ip6)
+  print(update)
 
 
 if __name__ == "__main__": m()
