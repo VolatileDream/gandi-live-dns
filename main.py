@@ -49,7 +49,7 @@ def icanhazip(ip4):
     flag = "-6"
 
   # This is terrible, but will work.
-  proc = subprocess.run(["curl", ip, "http://icanhazip.com"], capture_output=True)
+  proc = subprocess.run(["curl", flag, "http://icanhazip.com"], capture_output=True)
   if proc.returncode == 0:
     return str(proc.stdout.strip(), "utf8")
 
