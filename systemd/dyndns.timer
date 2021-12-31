@@ -1,0 +1,15 @@
+[Unit]
+Description=Gandi LiveDNS Update Timer
+
+[Timer]
+Persistent=true
+RandomizedDelaySec=5m
+OnUnitInactiveSec=15m
+
+[Timer]
+Persistent=true
+RandomizedDelaySec=5m
+OnBootSec=5m
+
+[Install]
+WantedBy=timers.target
