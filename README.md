@@ -11,7 +11,7 @@ You'll need an API Key from Gandi.net:
   * Insert the api key into `config.py`
 
 You need to setup the service with systemd / etc.
-  * Copy `dyndns.service` into `/etc/systemd/system`
   * Edit dyndns.service with the user & directory you want to run it as.
+  * Copy `systemd/*` into `/etc/systemd/system`
 
 
