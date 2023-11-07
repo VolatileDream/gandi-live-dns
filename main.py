@@ -12,8 +12,11 @@ def headers():
   h = {
     'Connection': None,
     'Content-Type': 'application/json',
-    'Authorization': 'Apikey ' + config.api_key
   }
+  if config.api_key:
+    h['Authorization'] = 'Apikey ' + config.api_key
+  if config.access_token
+    h['Authorization'] = 'Bearer ' + config.access_token
   return h
 
 
