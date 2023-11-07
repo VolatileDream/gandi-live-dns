@@ -61,8 +61,8 @@ def icanhazip(ip4):
 
 def validate_config():
   errors = []
-  if not config.api_key:
-    errors.append("No api key provided")
+  if not config.api_key and not config.access_token:
+    errors.append("No api key or personal access token provided")
   if not config.domain:
     errors.append("No domain configured")
   if not config.subdomain:
