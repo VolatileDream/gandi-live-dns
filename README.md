@@ -7,8 +7,12 @@ and forwards the information to Gandi.net's LiveDns service.
 
 You'll need an API Key from Gandi.net:
   * Login to Gandi.net
-  * Account > Security > Generate API Key
-  * Insert the api key into `config.py`
+  * User Settings > Personal Access Token > Create token
+  * Select the organization that contains your domains.
+  * Restrict to selected products: select only the domain you want to be updating.
+  * Add permission "Manage domain name technical configurations"
+  * Create!
+  * Insert the api key into `config.py` under `access_token`
 
 You need to setup the service with systemd / etc.
   * Edit dyndns.service with the user & directory you want to run it as.
